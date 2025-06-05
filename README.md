@@ -20,25 +20,34 @@ This is a single-file Terraform configuration (`main.tf`) with all resources inc
 
 ## 🧪 Terraform Workflow
 
-**Cloner le projet depuis GitHub**
+**Cloner le projet depuis GitHub**  
 Run `git clone https://github.com/your-username/aws-terraform-infra.git && cd aws-terraform-infra`.
 
-**(Optionnel) Exporter les clés AWS si non configurées via aws-cli**
-Run `export AWS_ACCESS_KEY_ID="votre_access_key"`.
+**(Optionnel) Exporter les clés AWS si non configurées via aws-cli**  
+Run `export AWS_ACCESS_KEY_ID="votre_access_key"`.  
 Run `export AWS_SECRET_ACCESS_KEY="votre_secret_key"`.
 
-**Initialiser Terraform**
+**Initialiser Terraform**  
 Run `terraform init`.
 
-**Afficher les changements prévus**
+**Afficher les changements prévus**  
 Run `terraform plan`.
 
-**Appliquer la configuration (taper 'yes' quand demandé)**
+**Appliquer la configuration (taper 'yes' quand demandé)**  
 Run `terraform apply`.
 
-**Afficher la sortie avec le DNS du Load Balancer**
+**Afficher la sortie avec le DNS du Load Balancer**  
 Run `terraform output`.
 
-**Pour tout détruire (taper 'yes' quand demandé)**
+**Pour tout détruire (taper 'yes' quand demandé)**  
 Run `terraform destroy`.
 
+---
+
+## 📌 Notes
+
+- ALB + WAF provides basic protection against common threats (e.g., SQL injection, XSS).  
+- IAM setup ensures secure access control and user/group policy assignment.  
+- Auto Scaling adjusts EC2 instances based on load, improving availability and cost efficiency.
+
+---
