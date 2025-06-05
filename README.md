@@ -8,37 +8,37 @@ This project automates the deployment of a complete AWS infrastructure using Ter
 - Web Application Firewall (WAF) integrated with the ALB  
 - IAM users, groups, and policies  
 
-# ⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) installed  
 - An AWS account with programmatic access  
 - Optional: AWS CLI installed and configured
 
-# 📁 Structure
+## 📁 Structure
 
 This is a single-file Terraform configuration (`main.tf`) with all resources included. You can extend it with `modules/` and `environments/` folders for production use.
 
-# 🧪 Terraform Workflow
+## 🧪 Terraform Workflow
 
 **Cloner le projet depuis GitHub**
-Run `git clone https://github.com/your-username/aws-terraform-infra.git && cd aws-terraform-infra`
+Run `git clone https://github.com/your-username/aws-terraform-infra.git && cd aws-terraform-infra`.
 
 **(Optionnel) Exporter les clés AWS si non configurées via aws-cli**
-Run `export AWS_ACCESS_KEY_ID="votre_access_key"`
-Run `export AWS_SECRET_ACCESS_KEY="votre_secret_key"`
+Run `export AWS_ACCESS_KEY_ID="votre_access_key"`.
+Run `export AWS_SECRET_ACCESS_KEY="votre_secret_key"`.
 
 **Initialiser Terraform**
-Run `terraform init`
+Run `terraform init`.
 
 **Afficher les changements prévus**
-Run `terraform plan`
+Run `terraform plan`.
 
 **Appliquer la configuration (taper 'yes' quand demandé)**
-Run `terraform apply`
+Run `terraform apply`.
 
 **Afficher la sortie avec le DNS du Load Balancer**
-Run `terraform output`
+Run `terraform output`.
 
 **Pour tout détruire (taper 'yes' quand demandé)**
-Run `terraform destroy`
+Run `terraform destroy`.
 
