@@ -21,24 +21,24 @@ This is a single-file Terraform configuration (`main.tf`) with all resources inc
 # 🧪 Terraform Workflow
 
 **Cloner le projet depuis GitHub**
-`git clone https://github.com/your-username/aws-terraform-infra.git && cd aws-terraform-infra`
+Run `git clone https://github.com/your-username/aws-terraform-infra.git && cd aws-terraform-infra`
 
 **(Optionnel) Exporter les clés AWS si non configurées via aws-cli**
-`export AWS_ACCESS_KEY_ID="votre_access_key"`
-`export AWS_SECRET_ACCESS_KEY="votre_secret_key"`
+Run `export AWS_ACCESS_KEY_ID="votre_access_key"`
+Run `export AWS_SECRET_ACCESS_KEY="votre_secret_key"`
 
 **Initialiser Terraform**
-`terraform init`
+Run `terraform init`
 
 **Afficher les changements prévus**
-`terraform plan`
+Run `terraform plan`
 
 **Appliquer la configuration (taper 'yes' quand demandé)**
-`terraform apply`
+Run `terraform apply`
 
 **Afficher la sortie avec le DNS du Load Balancer**
-`terraform output`
+Run `terraform output`
 
 **Pour tout détruire (taper 'yes' quand demandé)**
-`terraform destroy`
+Run `terraform destroy`
 
